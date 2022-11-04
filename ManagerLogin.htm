@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoginForm</title>
+<style>
+body {font-family: Arial;}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: outline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("login_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px; 
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.imgcontainer {
+  text-align: center;
+}
+img.avatar {
+  width: 20%;
+  border-radius:50%;
+}
+}
+</style>
+</head>
+<body>
+        <h2 align=center>Login Form</h2>
+        <form action="ManagerLogin.jsp" method="post">
+  <div class="imgcontainer">
+        <img src="managerlogin.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+        <b>Username:</b><br>
+        <input type="text" placeholder="Enter Username"  name="uname" required><br>
+        <b>Password:</b><br>
+        <input type="password" placeholder="Enter Password" name="pwd" required><br>
+        <button type="submit" class="button">Login</button>
+  </div>
+      
+</form>
+</body>
+</html>
